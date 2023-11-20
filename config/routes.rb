@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   root 'main#index'
+  resources :discussions, only: :index
 end
