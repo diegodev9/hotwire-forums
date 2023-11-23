@@ -12,7 +12,7 @@ class DiscussionsController < ApplicationController
   end
 
   def show
-
+    @new_post = @discussion.posts.new
   end
 
   def create
