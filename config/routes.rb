@@ -11,6 +11,6 @@ Rails.application.routes.draw do
 
   root 'main#index'
   resources :discussions do
-    resources :posts, only: :create, module: :discussions
+    resources :posts, except: :index, module: :discussions
   end
 end
