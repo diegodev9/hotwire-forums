@@ -6,6 +6,13 @@
 </div>
 
 <div class="row mt-4">
+  <div class="col-3">
+    <%= turbo_stream_from 'categories' %>
+    <h6>Categories</h6>
+    <div id="categories">
+      <%= render partial: 'categories/category', collection: category_sorted %>
+    </div>
+  </div>
   <div class="col">
     <div id="discussions">
       <%= render @discussions %>
