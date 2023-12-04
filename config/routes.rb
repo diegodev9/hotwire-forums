@@ -13,6 +13,10 @@ Rails.application.routes.draw do
   root 'main#index'
   resources :discussions do
     resources :posts, except: :index, module: :discussions
+
+    collection do
+      get 'category/:id', to: 'categories/discussions#index', as: :category
+    end
   end
 
   resources :categories
