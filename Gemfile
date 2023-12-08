@@ -48,6 +48,8 @@ gem 'bootstrap', '~> 5.3', '>= 5.3.2'
 gem 'sassc-rails', '~> 2.1', '>= 2.1.2'
 gem 'autoprefixer-rails'
 gem 'devise', '~> 4.9', '>= 4.9.3'
+gem "pagy", "~> 6.2"
+
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -64,4 +66,3 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
-
